@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+/* Dashboard sidebar related css */
+.custom-menu .ant-menu-item-selected {
+  background-color: #00AEEF !important;
+  color: white !important;
+  border-radius: 6px !important;
+}
+
+.custom-menu .ant-menu-item-selected::after {
+  border-right: none !important;
+}
+
+.custom-menu .ant-menu-item {
+  color: white !important;
+  margin: 4px 8px !important;
+  border-radius: 6px !important;
+  padding: 12px 16px !important;
+  height: auto !important;
+}
+
+.custom-menu .ant-menu-item:hover {
+  background-color: #00AEEF !important;
+  color: white !important;
+  border-radius: 6px !important;
+}
+
+.custom-menu .ant-menu-item a {
+  color: black !important;
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.custom-menu .ant-menu-item a:hover {
+  color: white !important;
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.custom-menu .ant-menu-item-selected a {
+  color: white !important;
+}
+
+.custom-menu .ant-menu-item .ant-menu-item-icon {
+  color: black !important;
+  margin-right: 12px !important;
+}
+
+.custom-menu .ant-menu-item:hover .ant-menu-item-icon {
+  color: white !important;
+  margin-right: 12px !important;
+}
+
+.custom-menu .ant-menu-item-selected .ant-menu-item-icon {
+  color: white !important;
+  margin-right: 12px !important;
+}
+
+.custom-menu .ant-menu-inline-collapsed .ant-menu-item {
+  padding-left: 24px !important;
+  text-align: center !important;
+}
+
+.custom-menu .ant-menu-inline-collapsed .ant-menu-item .ant-menu-item-icon {
+  margin-right: 0 !important;
+}
+
+/* Remove default Ant Design menu styling */
+.custom-menu .ant-menu-dark .ant-menu-item-selected {
+  background-color: #00AEEF !important;
+}
+
+.custom-menu .ant-menu-dark .ant-menu-item:hover {
+  background-color: #00AEEF !important;
+}
+
+.custom-menu .ant-menu-item-active {
+  background-color: #00AEEF !important;
+}
+
+
+/* Responsive table enhancements */
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: 14px;
+  }
+
+  .table-responsive th,
+  .table-responsive td {
+    padding: 12px 8px;
+  }
+
+  /* Stack pagination on mobile */
+  .pagination-mobile {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Custom scrollbar for table */
+.overflow-x-auto::-webkit-scrollbar {
+  height: 8px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+.image-modal .ant-modal-content,
+.image-modal .ant-modal-body {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  /* optional */
+  background: transparent !important;
+  /* kills white backdrop */
+  box-shadow: none !important;
+  /* kills drop-shadow */
+}
